@@ -28,18 +28,12 @@ const Ticket = (): React.JSX.Element => {
 			<Global styles={globalInject} />
 			<NavHeader title='ticket' />
 			<TicketStyle>
-				<NavLink
-					to={
-						'https://api.whatsapp.com/send/?phone=%2B6281239277187&text&type=phone_number&app_absent=0'
-					}>
+				<NavLink to={'#'}>
 					<section>
 						<img src={presale} />
 					</section>
 				</NavLink>
-				<NavLink
-					to={
-						'https://api.whatsapp.com/send/?phone=%2B6287758706555&text&type=phone_number&app_absent=0'
-					}>
+				<NavLink to={'#'}>
 					<section>
 						<img src={spot} />
 					</section>
