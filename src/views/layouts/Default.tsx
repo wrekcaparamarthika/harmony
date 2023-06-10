@@ -36,10 +36,13 @@ const LatarStyle = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
+	margin: 1rem;
 	div {
 		background-color: #a6373e;
 		border-radius: 2.5rem;
 		padding: 1rem;
+		height: 10rem;
+		overflow-y: auto;
 		p {
 			text-indent: 2rem;
 			text-align: justify;
