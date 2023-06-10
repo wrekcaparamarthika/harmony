@@ -1,11 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import styled from '@emotion/styled';
-const BannerStyle = styled.header`
+const BannerStyle = styled.div`
 	position: fixed;
 	width: 100%;
 	left: 50%;
 	transform: translateX(-50%);
-	padding: 0.5rem;
+	padding: 0.75rem;
 	background-color: #a6373e;
 	box-sizing: border-box;
 	display: flex;

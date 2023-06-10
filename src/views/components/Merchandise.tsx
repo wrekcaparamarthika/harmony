@@ -4,7 +4,7 @@ import NavHeader from './NavHeader';
 import { Global } from '@emotion/react';
 import globalInject from '../style/DefaultStyle';
 import { Merch1, Merch2, Merch3, Merch4 } from '../../assets';
-
+import { contactPerson } from '../../constants';
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
 const MerchStyle = styled.div`
@@ -35,20 +35,33 @@ const MerchStyle = styled.div`
 		}
 	}
 	section:nth-of-type(3) {
-		height: 5rem;
 		background-color: #a6373e;
 		color: #fffef4;
-		position: fixed;
-		top: 50%;
 		text-transform: capitalize;
 		padding: 1rem;
+		height: fit-content;
+		z-index: 999;
+		position: fixed;
+		width: 50%;
+		top: 45%;
+		border-top-right-radius: 50%;
+		border-bottom-right-radius: 50%;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
 		a {
 			color: #fffef4;
 			text-decoration: none;
 			cursor: pointer;
+			font-style: italic;
+			font-weight: 700;
+		}
+		h1 {
+			font-size: 16px;
 		}
 	}
 `;
+
 const Merchandise = () => {
 	return (
 		<React.Fragment>
@@ -65,19 +78,15 @@ const Merchandise = () => {
 				</section>
 				<section>
 					<h1>contact person</h1>
-					<Link
-						to={
-							'https://api.whatsapp.com/send/?phone=%2B6281239277187&text&type=phone_number&app_absent=0'
-						}>
-						suralaga
-					</Link>
-					<br />
-					<Link
-						to={
-							'https://api.whatsapp.com/send/?phone=%2B6287758706555&text&type=phone_number&app_absent=0'
-						}>
-						devani rata
-					</Link>
+					<p>
+						untuk preorder bisa langsung klik contact person
+						tersebut agar nanti diarahkan ke whatsapp!
+					</p>
+					{contactPerson.map((value, index) => (
+						<React.Fragment key={index}>
+							<Link to={value.cp}>{value.name}</Link>
+						</React.Fragment>
+					))}
 				</section>
 			</MerchStyle>
 			<Artwork />

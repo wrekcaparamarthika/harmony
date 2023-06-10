@@ -14,6 +14,7 @@ const ArtworkStyle = styled.div`
 	img {
 		position: relative;
 		width: 380px;
+		opacity: 50%;
 	}
 `;
 const Artwork = (): React.JSX.Element => {

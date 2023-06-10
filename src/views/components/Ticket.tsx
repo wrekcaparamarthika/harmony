@@ -17,7 +17,7 @@ const TicketStyle = styled.div`
 			align-items: center;
 			justify-content: center;
 			img {
-				width: 280px;
+				width: 320px;
 			}
 		}
 	}
