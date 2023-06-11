@@ -62,7 +62,7 @@ const MerchStyle = styled.div`
 	}
 `;
 
-const Merchandise = () => {
+export const Merchandise: React.FC = (): React.JSX.Element => {
 	return (
 		<React.Fragment>
 			<Global styles={globalInject} />
@@ -93,5 +93,3 @@ const Merchandise = () => {
 		</React.Fragment>
 	);
 };
-
-export default Merchandise;

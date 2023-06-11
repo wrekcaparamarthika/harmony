@@ -38,23 +38,20 @@ const LatarStyle = styled.div`
 		color: #fffef4;
 	}
 `;
-const Default = () => {
+export const Default: React.FC = (): React.JSX.Element => {
 	return (
-		<React.Suspense fallback={<h1>loading...</h1>}>
-			<MainStyle>
-				<Global styles={globalInject} />
-				<LatarStyle>
-					<div>
-						<p>{latarText.paragraph1}</p>
-						<p>{latarText.paragraph2}</p>
-						<p>{latarText.paragraph3}</p>
-					</div>
-					<h1>"bangkit dalam harmoni vol. II"</h1>
-				</LatarStyle>
-				<Banner />
-				<Artwork />
-			</MainStyle>
-		</React.Suspense>
+		<MainStyle>
+			<Global styles={globalInject} />
+			<LatarStyle>
+				<div>
+					<p>{latarText.paragraph1}</p>
+					<p>{latarText.paragraph2}</p>
+					<p>{latarText.paragraph3}</p>
+				</div>
+				<h1>"bangkit dalam harmoni vol. II"</h1>
+			</LatarStyle>
+			<Banner />
+			<Artwork />
+		</MainStyle>
 	);
 };
-export default Default;

@@ -22,7 +22,7 @@ const TicketStyle = styled.div`
 		}
 	}
 `;
-const Ticket = (): React.JSX.Element => {
+export const Ticket: React.FC = (): React.JSX.Element => {
 	return (
 		<React.Fragment>
 			<Global styles={globalInject} />
@@ -43,4 +43,3 @@ const Ticket = (): React.JSX.Element => {
 		</React.Fragment>
 	);
 };
-export default Ticket;

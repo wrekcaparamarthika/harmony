@@ -1,10 +1,28 @@
 import { RouterProvider, createHashRouter } from 'react-router-dom';
-import Ticket from '../views/components/Ticket';
+
 import LineUp from '../views/components/LineUp';
 import React from 'react';
-import Default from '../views/layouts/Default';
-import Rundown from '../views/components/Rundown';
-import Merchandise from '../views/components/Merchandise';
+
+const Merchandise = React.lazy(() =>
+	import('../views/components/Merchandise').then(({ Merchandise }) => ({
+		default: Merchandise,
+	}))
+);
+const Ticket = React.lazy(() =>
+	import('../views/components/Ticket').then(({ Ticket }) => ({
+		default: Ticket,
+	}))
+);
+const Default = React.lazy(() =>
+	import('../views/layouts/Default').then(({ Default }) => ({
+		default: Default,
+	}))
+);
+const Rundown = React.lazy(() =>
+	import('../views/components/Rundown').then(({ Rundown }) => ({
+		default: Rundown,
+	}))
+);
 const route = createHashRouter([
 	{
 		path: '/',
@@ -31,7 +49,9 @@ const route = createHashRouter([
 const Navigation = () => {
 	return (
 		<React.Fragment>
-			<RouterProvider router={route} />
+			<React.Suspense fallback={<h1>loading...</h1>}>
+				<RouterProvider router={route} />
+			</React.Suspense>
 		</React.Fragment>
 	);
 };
