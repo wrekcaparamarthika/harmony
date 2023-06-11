@@ -4,6 +4,7 @@ import globalInject from '../style/DefaultStyle';
 import styled from '@emotion/styled';
 import Artwork from '../components/Artwork';
 import { latarText } from '../../constants';
+import React from 'react';
 const MainStyle = styled.main`
 	display: flex;
 	flex-direction: column;
@@ -39,19 +40,21 @@ const LatarStyle = styled.div`
 `;
 const Default = () => {
 	return (
-		<MainStyle>
-			<Global styles={globalInject} />
-			<LatarStyle>
-				<div>
-					<p>{latarText.paragraph1}</p>
-					<p>{latarText.paragraph2}</p>
-					<p>{latarText.paragraph3}</p>
-				</div>
-				<h1>"bangkit dalam harmoni vol. II"</h1>
-			</LatarStyle>
-			<Banner />
-			<Artwork />
-		</MainStyle>
+		<React.Suspense fallback={<h1>loading...</h1>}>
+			<MainStyle>
+				<Global styles={globalInject} />
+				<LatarStyle>
+					<div>
+						<p>{latarText.paragraph1}</p>
+						<p>{latarText.paragraph2}</p>
+						<p>{latarText.paragraph3}</p>
+					</div>
+					<h1>"bangkit dalam harmoni vol. II"</h1>
+				</LatarStyle>
+				<Banner />
+				<Artwork />
+			</MainStyle>
+		</React.Suspense>
 	);
 };
 export default Default;
