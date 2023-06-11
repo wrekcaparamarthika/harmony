@@ -2,6 +2,7 @@ import { RouterProvider, createHashRouter } from 'react-router-dom';
 
 import LineUp from '../views/components/LineUp';
 import React from 'react';
+import Fallback from '../views/components/Fallback';
 
 const Merchandise = React.lazy(() =>
 	import('../views/components/Merchandise').then(({ Merchandise }) => ({
@@ -46,10 +47,10 @@ const route = createHashRouter([
 	},
 ]);
 
-const Navigation = () => {
+const Navigation: React.FC = (): React.JSX.Element => {
 	return (
 		<React.Fragment>
-			<React.Suspense fallback={<h1>loading...</h1>}>
+			<React.Suspense fallback={<Fallback />}>
 				<RouterProvider router={route} />
 			</React.Suspense>
 		</React.Fragment>
