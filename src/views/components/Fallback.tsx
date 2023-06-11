@@ -14,7 +14,6 @@ const FallbackStyle = styled.div`
 		padding: 1rem;
 		color: #fffef4;
 		text-transform: capitalize;
-		border-radius: 10%;
 	}
 `;
 const Fallback: React.FC = (): React.JSX.Element => {

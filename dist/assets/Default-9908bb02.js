@@ -1,4 +1,4 @@
-import{n as t,j as e,a as n,G as i,g as a,A as o}from"./index-8dd7e39d.js";import{l as r}from"./index-36d1b027.js";const l=t.div`
+import{n as t,j as e,a as n,G as i,g as a,A as o}from"./index-7b10d764.js";import{l as r}from"./index-36d1b027.js";const l=t.div`
 	position: fixed;
 	width: 100%;
 	left: 50%;
