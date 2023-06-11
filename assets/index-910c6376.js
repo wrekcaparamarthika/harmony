@@ -147,13 +147,7 @@ Error generating stack: `+o.message+`
 			font-weight: bold;
 		}
 	}
-`,l0=()=>N.jsxs(r0,{children:[N.jsx("div",{children:N.jsx(kn,{to:"/ticket",children:"ticket"})}),N.jsx("div",{children:N.jsx(kn,{to:"/lineup",children:"lineup"})}),N.jsx("div",{children:N.jsx(kn,{to:"rundown",children:"rundown"})}),N.jsx("div",{children:N.jsx(kn,{to:"merchandise",children:"merchandise"})})]}),o0=Rt.main`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 1rem;
-`,na={paragraph1:`Mengacu pada dampak dari Pandemi Covid - 19 di indonesia
+`,l0=()=>N.jsxs(r0,{children:[N.jsx("div",{children:N.jsx(kn,{to:"/ticket",children:"ticket"})}),N.jsx("div",{children:N.jsx(kn,{to:"/lineup",children:"lineup"})}),N.jsx("div",{children:N.jsx(kn,{to:"rundown",children:"rundown"})}),N.jsx("div",{children:N.jsx(kn,{to:"merchandise",children:"merchandise"})})]}),o0=[{name:"suralaga",cp:"https://api.whatsapp.com/send/?phone=%2B6281239277187&text&type=phone_number&app_absent=0"},{name:"devani rata",cp:"https://api.whatsapp.com/send/?phone=%2B6287758706555&text&type=phone_number&app_absent=0"}],na={paragraph1:`Mengacu pada dampak dari Pandemi Covid - 19 di indonesia
 	yang hampir 3 (tiga) tahun melanda dunia baik Ekonomi,
 	Sosial maupun Budaya menjadi tidak stabil, dimana banyak
 	masyarakat meminimalisir untuk berinterkasi antara satu
@@ -168,7 +162,13 @@ Error generating stack: `+o.message+`
 	Budaya agar dapat bergeliat kembali secara normal dengan
 	memberdayakan UMKM, menumbuhkan kesadaran sosial bagi
 	masyarakat, serta menggeliatkan kembali sektor
-	kebudayaan di masyarakat yang kami rangkum dalam tema`},i0=Rt.div`
+	kebudayaan di masyarakat yang kami rangkum dalam tema`},i0=Rt.main`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+`,a0=Rt.div`
 	position: fixed;
 	top: 10%;
 	display: flex;
@@ -177,7 +177,6 @@ Error generating stack: `+o.message+`
 	margin: 1rem;
 	div {
 		background-color: #a6373e;
-		border-radius: 2.5rem;
 		padding: 1rem;
 		height: 10rem;
 		overflow-y: auto;
@@ -193,7 +192,7 @@ Error generating stack: `+o.message+`
 		background-color: #a6373e;
 		color: #fffef4;
 	}
-`,a0=()=>N.jsxs(o0,{children:[N.jsx(Pl,{styles:Rl}),N.jsxs(i0,{children:[N.jsxs("div",{children:[N.jsx("p",{children:na.paragraph1}),N.jsx("p",{children:na.paragraph2}),N.jsx("p",{children:na.paragraph3})]}),N.jsx("h1",{children:'"bangkit dalam harmoni vol. II"'})]}),N.jsx(l0,{}),N.jsx(_l,{})]}),u0=()=>N.jsxs(Ut.Fragment,{children:[N.jsx(Pl,{styles:Rl}),N.jsx(vi,{title:"Rundown"}),N.jsx(Yp,{title:"rundown coming soon!"}),N.jsx(_l,{})]}),s0=[{name:"suralaga",cp:"https://api.whatsapp.com/send/?phone=%2B6281239277187&text&type=phone_number&app_absent=0"},{name:"devani rata",cp:"https://api.whatsapp.com/send/?phone=%2B6287758706555&text&type=phone_number&app_absent=0"}],c0=Rt.div`
+`,u0=()=>N.jsxs(i0,{children:[N.jsx(Pl,{styles:Rl}),N.jsxs(a0,{children:[N.jsxs("div",{children:[N.jsx("p",{children:na.paragraph1}),N.jsx("p",{children:na.paragraph2}),N.jsx("p",{children:na.paragraph3})]}),N.jsx("h1",{children:'"bangkit dalam harmoni vol. II"'})]}),N.jsx(l0,{}),N.jsx(_l,{})]}),s0=()=>N.jsxs(Ut.Fragment,{children:[N.jsx(Pl,{styles:Rl}),N.jsx(vi,{title:"Rundown"}),N.jsx(Yp,{title:"rundown coming soon!"}),N.jsx(_l,{})]}),c0=Rt.div`
 	display: flex;
 	flex-direction: column;
 	overflow-x: hidden;
@@ -246,4 +245,4 @@ Error generating stack: `+o.message+`
 			font-size: 16px;
 		}
 	}
-`,f0=()=>N.jsxs(Ut.Fragment,{children:[N.jsx(Pl,{styles:Rl}),N.jsx(vi,{title:"merchandise"}),N.jsxs(c0,{children:[N.jsxs("section",{children:[N.jsx("img",{src:Gy}),N.jsx("img",{src:Yy})]}),N.jsxs("section",{children:[N.jsx("img",{src:Zy}),N.jsx("img",{src:Xy})]}),N.jsxs("section",{children:[N.jsx("h1",{children:"contact person"}),N.jsx("p",{children:"untuk preorder bisa langsung klik contact person tersebut agar nanti diarahkan ke whatsapp!"}),s0.map((e,t)=>N.jsx(Ut.Fragment,{children:N.jsx(_p,{to:e.cp,children:e.name})},t))]})]}),N.jsx(_l,{})]}),d0=Ag([{path:"/",element:N.jsx(a0,{})},{path:"/ticket",element:N.jsx(e0,{})},{path:"/lineup",element:N.jsx(n0,{})},{path:"/rundown",element:N.jsx(u0,{})},{path:"/merchandise",element:N.jsx(f0,{})}]),p0=()=>N.jsx(Ut.Fragment,{children:N.jsx(Mg,{router:d0})});ra.createRoot(document.getElementById("root")).render(N.jsx(Ut.StrictMode,{children:N.jsx(p0,{})}));
+`,f0=()=>N.jsxs(Ut.Fragment,{children:[N.jsx(Pl,{styles:Rl}),N.jsx(vi,{title:"merchandise"}),N.jsxs(c0,{children:[N.jsxs("section",{children:[N.jsx("img",{src:Gy}),N.jsx("img",{src:Yy})]}),N.jsxs("section",{children:[N.jsx("img",{src:Zy}),N.jsx("img",{src:Xy})]}),N.jsxs("section",{children:[N.jsx("h1",{children:"contact person"}),N.jsx("p",{children:"untuk preorder bisa langsung klik contact person tersebut agar nanti diarahkan ke whatsapp!"}),o0.map((e,t)=>N.jsx(Ut.Fragment,{children:N.jsx(_p,{to:e.cp,children:e.name})},t))]})]}),N.jsx(_l,{})]}),d0=Ag([{path:"/",element:N.jsx(u0,{})},{path:"/ticket",element:N.jsx(e0,{})},{path:"/lineup",element:N.jsx(n0,{})},{path:"/rundown",element:N.jsx(s0,{})},{path:"/merchandise",element:N.jsx(f0,{})}]),p0=()=>N.jsx(Ut.Fragment,{children:N.jsx(Mg,{router:d0})});ra.createRoot(document.getElementById("root")).render(N.jsx(Ut.StrictMode,{children:N.jsx(p0,{})}));
