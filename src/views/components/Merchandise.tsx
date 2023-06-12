@@ -41,26 +41,36 @@ const MerchStyle = styled.div`
 		background-color: #a6373e;
 		color: #fffef4;
 		text-transform: capitalize;
-		padding: 0.5rem;
-		height: fit-content;
 		z-index: 999;
 		position: fixed;
 		width: 100%;
+		left: 50%;
+		transform: translateX(-50%);
 		bottom: 0%;
-		display: flex;
 		flex-direction: column;
-		gap: 1rem;
 		margin: 0rem;
-		a {
-			color: #fffef4;
-			text-decoration: none;
-			cursor: pointer;
-			font-style: italic;
-			font-weight: 700;
-			text-decoration: underline;
-		}
+		display: flex;
+		justify-content: center;
+		padding: 0.5rem;
 		h1 {
-			font-size: 16px;
+			text-align: center;
+		}
+		p {
+			text-align: center;
+		}
+		div {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			a {
+				color: #fffef4;
+				text-decoration: none;
+				cursor: pointer;
+				font-style: italic;
+				font-weight: 700;
+				text-decoration: underline;
+				padding: 0.5rem;
+			}
 		}
 	}
 `;
@@ -105,11 +115,13 @@ export const Merchandise: React.FC = (): React.JSX.Element => {
 						untuk preorder bisa langsung klik contact person
 						tersebut agar nanti diarahkan ke whatsapp!
 					</p>
-					{contactPerson.map((value, index) => (
-						<React.Fragment key={index}>
-							<Link to={value.cp}>{value.name}</Link>
-						</React.Fragment>
-					))}
+					<div>
+						{contactPerson.map((value, index) => (
+							<React.Fragment key={index}>
+								<Link to={value.cp}>{value.name}</Link>
+							</React.Fragment>
+						))}
+					</div>
 				</section>
 			</MerchStyle>
 			<Artwork />
