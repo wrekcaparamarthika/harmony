@@ -112,7 +112,7 @@ export const Merchandise: React.FC = (): React.JSX.Element => {
 				<section>
 					<h1>contact person</h1>
 					<p>
-						untuk preorder bisa langsung klik contact person
+						untuk pre - order bisa langsung klik contact person
 						tersebut agar nanti diarahkan ke whatsapp!
 					</p>
 					<div>
