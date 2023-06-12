@@ -3,38 +3,41 @@ import Artwork from './Artwork';
 import NavHeader from './NavHeader';
 import { Global } from '@emotion/react';
 import globalInject from '../style/DefaultStyle';
-import { Merch1, Merch2, Merch3, Merch4 } from '../../assets';
+import {
+	MERCHANDISE_BLACK,
+	MERCHANDISE_SizeChart,
+	MERCHANDISE_WHITE,
+} from '../../assets';
 import { contactPerson } from '../../constants';
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
 const MerchStyle = styled.div`
 	display: flex;
 	flex-direction: column;
-	overflow-x: hidden;
-	height: 100vh;
-	gap: 5rem;
-	img {
-		width: 320px;
+	button {
+		all: unset;
+		text-transform: capitalize;
+		background-color: #a6373e;
+		padding: 1rem;
+		align-items: center;
+		justify-content: center;
+		color: #fffef4;
 	}
-	section:nth-of-type(1) {
+	section {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		margin: 1rem;
+		text-transform: capitalize;
+		img {
+			width: 340px;
+		}
 		img:nth-of-type(2) {
 			position: absolute;
-			top: 10rem;
-			left: 5rem;
+			top: 35%;
 		}
 	}
 	section:nth-of-type(2) {
-		display: flex;
-		flex-direction: column;
-		img:nth-of-type(2) {
-			position: absolute;
-			top: 30rem;
-			left: 5rem;
-		}
-	}
-	section:nth-of-type(3) {
 		background-color: #a6373e;
 		color: #fffef4;
 		text-transform: capitalize;
@@ -43,12 +46,13 @@ const MerchStyle = styled.div`
 		z-index: 999;
 		position: fixed;
 		width: 50%;
-		top: 45%;
+		top: 65%;
 		border-top-right-radius: 50%;
 		border-bottom-right-radius: 50%;
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
+		margin: 0rem;
 		a {
 			color: #fffef4;
 			text-decoration: none;
@@ -63,18 +67,38 @@ const MerchStyle = styled.div`
 `;
 
 export const Merchandise: React.FC = (): React.JSX.Element => {
+	const [isActive, setActive] = React.useState<boolean>(false);
+	const handleActive = () => {
+		setActive((prev) => !prev);
+	};
 	return (
 		<React.Fragment>
 			<Global styles={globalInject} />
 			<NavHeader title='merchandise' />
 			<MerchStyle>
+				<button onClick={handleActive}>
+					{isActive ? 'merchandise' : 'size chart'}
+				</button>
 				<section>
-					<img src={Merch3} />
-					<img src={Merch1} />
-				</section>
-				<section>
-					<img src={Merch4} />
-					<img src={Merch2} />
+					<h1>{isActive ? 'size chart' : 'official merchandise'}</h1>
+					{!isActive && (
+						<React.Fragment>
+							<img
+								src={MERCHANDISE_WHITE}
+								alt={MERCHANDISE_WHITE}
+							/>
+							<img
+								src={MERCHANDISE_BLACK}
+								alt={MERCHANDISE_BLACK}
+							/>
+						</React.Fragment>
+					)}
+					{isActive && (
+						<img
+							src={MERCHANDISE_SizeChart}
+							alt={MERCHANDISE_SizeChart}
+						/>
+					)}
 				</section>
 				<section>
 					<h1>contact person</h1>
