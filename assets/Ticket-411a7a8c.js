@@ -1,4 +1,4 @@
-import{n as s,j as t,R as n,G as r,g as i,N as a,a as e,A as o}from"./index-e73fab8e.js";const c=""+new URL("presale-2d06193a.png",import.meta.url).href,l=""+new URL("spot-04853145.png",import.meta.url).href,x=s.div`
+import{n as s,j as t,R as n,G as r,g as i,N as a,a as e,A as o}from"./index-772211f9.js";const c=""+new URL("presale-2d06193a.png",import.meta.url).href,l=""+new URL("spot-04853145.png",import.meta.url).href,x=s.div`
 	position: fixed;
 	bottom: 20%;
 	left: 50%;
