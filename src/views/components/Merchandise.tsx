@@ -41,14 +41,12 @@ const MerchStyle = styled.div`
 		background-color: #a6373e;
 		color: #fffef4;
 		text-transform: capitalize;
-		padding: 1rem;
+		padding: 0.5rem;
 		height: fit-content;
 		z-index: 999;
 		position: fixed;
-		width: 50%;
-		top: 65%;
-		border-top-right-radius: 50%;
-		border-bottom-right-radius: 50%;
+		width: 100%;
+		bottom: 0%;
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
@@ -59,6 +57,7 @@ const MerchStyle = styled.div`
 			cursor: pointer;
 			font-style: italic;
 			font-weight: 700;
+			text-decoration: underline;
 		}
 		h1 {
 			font-size: 16px;
