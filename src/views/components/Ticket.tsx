@@ -6,6 +6,7 @@ import Artwork from './Artwork';
 import NavHeader from './NavHeader';
 import { presale, spot } from '../../assets';
 import { NavLink } from 'react-router-dom';
+import { UnderMaintenance } from './UnderMaintenance';
 const TicketStyle = styled.div`
 	position: fixed;
 	bottom: 20%;
@@ -22,10 +23,12 @@ const TicketStyle = styled.div`
 		}
 	}
 `;
+
 export const Ticket: React.FC = (): React.JSX.Element => {
 	return (
 		<React.Fragment>
 			<Global styles={globalInject} />
+			<UnderMaintenance title='ticket' />
 			<NavHeader title='ticket' />
 			<TicketStyle>
 				<NavLink to={'#'}>
