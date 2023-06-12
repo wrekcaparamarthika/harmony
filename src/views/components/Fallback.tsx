@@ -21,7 +21,7 @@ const Fallback: React.FC = (): React.JSX.Element => {
 		<React.Fragment>
 			<Global styles={globalInject} />
 			<FallbackStyle>
-				<h1>loading...</h1>
+				<h1>harmony</h1>
 			</FallbackStyle>
 		</React.Fragment>
 	);
