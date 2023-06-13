@@ -84,9 +84,9 @@ Error generating stack: `+o.message+`
 	img {
 		position: relative;
 		width: 380px;
-		opacity: 50%;
+		opacity: ${e=>e.opacity};
 	}
-`,Kg=()=>Z.jsx(yt.Fragment,{children:Z.jsx(Qg,{children:Z.jsx("img",{src:Ag,alt:"artwork"})})}),Wp=Ig`
+`,Kg=({opacity:e="50%"})=>Z.jsx(yt.Fragment,{children:Z.jsx(Qg,{opacity:e,children:Z.jsx("img",{src:Ag,alt:"artwork"})})}),Wp=Ig`
 	* {
 		margin: 0px;
 		padding: 0px;
@@ -122,4 +122,4 @@ Error generating stack: `+o.message+`
 		color: #fffef4;
 		text-transform: capitalize;
 	}
-`,bg=()=>Z.jsxs(yt.Fragment,{children:[Z.jsx(Hp,{styles:Wp}),Z.jsx(qg,{children:Z.jsx("h1",{children:"harmony"})})]}),e0=yt.lazy(()=>Zo(()=>import("./Merchandise-b453e7ed.js"),["./Merchandise-b453e7ed.js","./index-85b66e65.js"],import.meta.url).then(({Merchandise:e})=>({default:e}))),t0=yt.lazy(()=>Zo(()=>import("./Ticket-f2c530c8.js"),[],import.meta.url).then(({Ticket:e})=>({default:e}))),n0=yt.lazy(()=>Zo(()=>import("./Default-14e357c6.js"),["./Default-14e357c6.js","./index-85b66e65.js"],import.meta.url).then(({Default:e})=>({default:e}))),r0=yt.lazy(()=>Zo(()=>import("./Rundown-cc3047ee.js"),[],import.meta.url).then(({Rundown:e})=>({default:e}))),l0=Iy([{path:"/",element:Z.jsx(n0,{})},{path:"/ticket",element:Z.jsx(t0,{})},{path:"/lineup",element:Z.jsx(Jg,{})},{path:"/rundown",element:Z.jsx(r0,{})},{path:"/merchandise",element:Z.jsx(e0,{})}]),o0=()=>Z.jsx(yt.Fragment,{children:Z.jsx(yt.Suspense,{fallback:Z.jsx(bg,{}),children:Z.jsx(Ly,{router:l0})})});qi.createRoot(document.getElementById("root")).render(Z.jsx(yt.StrictMode,{children:Z.jsx(o0,{})}));export{Kg as A,Zg as C,Hp as G,By as L,Gg as N,yt as R,Hy as a,Wp as g,Z as j,hr as n,L as r};
+`,bg=()=>Z.jsxs(yt.Fragment,{children:[Z.jsx(Hp,{styles:Wp}),Z.jsx(qg,{children:Z.jsx("h1",{children:"harmony"})})]}),e0=yt.lazy(()=>Zo(()=>import("./Merchandise-49e6a9d7.js"),["./Merchandise-49e6a9d7.js","./index-85b66e65.js"],import.meta.url).then(({Merchandise:e})=>({default:e}))),t0=yt.lazy(()=>Zo(()=>import("./Ticket-051abd83.js"),[],import.meta.url).then(({Ticket:e})=>({default:e}))),n0=yt.lazy(()=>Zo(()=>import("./Default-c96df715.js"),["./Default-c96df715.js","./index-85b66e65.js"],import.meta.url).then(({Default:e})=>({default:e}))),r0=yt.lazy(()=>Zo(()=>import("./Rundown-0b6dfa86.js"),[],import.meta.url).then(({Rundown:e})=>({default:e}))),l0=Iy([{path:"/",element:Z.jsx(n0,{})},{path:"/ticket",element:Z.jsx(t0,{})},{path:"/lineup",element:Z.jsx(Jg,{})},{path:"/rundown",element:Z.jsx(r0,{})},{path:"/merchandise",element:Z.jsx(e0,{})}]),o0=()=>Z.jsx(yt.Fragment,{children:Z.jsx(yt.Suspense,{fallback:Z.jsx(bg,{}),children:Z.jsx(Ly,{router:l0})})});qi.createRoot(document.getElementById("root")).render(Z.jsx(yt.StrictMode,{children:Z.jsx(o0,{})}));export{Kg as A,Zg as C,Hp as G,By as L,Gg as N,yt as R,Hy as a,Wp as g,Z as j,hr as n,L as r};
