@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 const FooterStyle = styled.div`
 	position: fixed;
 	bottom: 0%;
+	width: 100%;
 	div {
 		background-color: #a6373e;
 		padding: 0.25rem;

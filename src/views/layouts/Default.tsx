@@ -43,7 +43,7 @@ export const Default: React.FC = (): React.JSX.Element => {
 		<MainStyle>
 			<Global styles={globalInject} />
 			<Banner />
-			<Artwork />
+			<Artwork opacity='100%' />
 			<Harmony />
 		</MainStyle>
 	);

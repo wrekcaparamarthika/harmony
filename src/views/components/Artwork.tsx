@@ -1,7 +1,10 @@
 import artwork from '../../assets/artwork.png';
 import React from 'react';
 import styled from '@emotion/styled';
-const ArtworkStyle = styled.div`
+interface IArtworkStyle {
+	opacity: string;
+}
+const ArtworkStyle = styled.div<IArtworkStyle>`
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -14,13 +17,17 @@ const ArtworkStyle = styled.div`
 	img {
 		position: relative;
 		width: 380px;
-		opacity: 50%;
+		opacity: ${(props) => props.opacity};
 	}
 `;
-const Artwork = (): React.JSX.Element => {
+const Artwork = ({
+	opacity = '50%',
+}: {
+	opacity?: string;
+}): React.JSX.Element => {
 	return (
 		<React.Fragment>
-			<ArtworkStyle>
+			<ArtworkStyle opacity={opacity}>
 				<img
 					src={artwork}
 					alt='artwork'
