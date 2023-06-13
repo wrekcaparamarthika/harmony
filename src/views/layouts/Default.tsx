@@ -5,6 +5,7 @@ import styled from '@emotion/styled';
 import Artwork from '../components/Artwork';
 import { latarText } from '../../constants';
 import React from 'react';
+import Harmony from '../components/Harmony';
 const MainStyle = styled.main`
 	display: flex;
 	flex-direction: column;
@@ -42,16 +43,22 @@ export const Default: React.FC = (): React.JSX.Element => {
 	return (
 		<MainStyle>
 			<Global styles={globalInject} />
-			<LatarStyle>
-				<div>
-					<p>{latarText.paragraph1}</p>
-					<p>{latarText.paragraph2}</p>
-					<p>{latarText.paragraph3}</p>
-				</div>
-				<h1>"bangkit dalam harmoni vol. II"</h1>
-			</LatarStyle>
 			<Banner />
 			<Artwork />
+			<Harmony />
 		</MainStyle>
+	);
+};
+
+const Latar = () => {
+	return (
+		<LatarStyle>
+			<div>
+				<p>{latarText.paragraph1}</p>
+				<p>{latarText.paragraph2}</p>
+				<p>{latarText.paragraph3}</p>
+			</div>
+			<h1>"bangkit dalam harmoni vol. II"</h1>
+		</LatarStyle>
 	);
 };
