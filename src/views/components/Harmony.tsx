@@ -17,6 +17,11 @@ const FooterStyle = styled.div`
 			color: #fffef4;
 			align-items: center;
 			text-transform: capitalize;
+			span {
+				height: 2.5rem;
+				width: 1px;
+				background-color: #fffef4;
+			}
 			h1 {
 				font-size: 16px;
 			}
@@ -42,7 +47,10 @@ const Harmony: React.FC = (): React.JSX.Element => {
 								<Link to={value.cp}>{value.name}</Link>
 							</div>
 						))}
+						<span />
 						<h1>harmony vol#2</h1>
+						<span />
+						<h1>naff</h1>
 					</section>
 				))}
 			</Marquee>
