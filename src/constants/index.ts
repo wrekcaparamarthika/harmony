@@ -1,3 +1,16 @@
+import {
+	harmonia,
+	harmonia_logo,
+	majesty,
+	majesty_logo,
+	naff,
+	naff_logo,
+	orangetrip,
+	orangetrip_logo,
+	regale,
+	regale_logo,
+} from '../assets/band';
+
 const contactPerson = [
 	{
 		name: 'suralaga',
@@ -28,4 +41,27 @@ const latarText = {
 	masyarakat, serta menggeliatkan kembali sektor
 	kebudayaan di masyarakat yang kami rangkum dalam tema`,
 };
-export { contactPerson, latarText };
+
+const artisList = [
+	{
+		band: naff,
+		band_logo: naff_logo,
+	},
+	{
+		band: harmonia,
+		band_logo: harmonia_logo,
+	},
+	{
+		band: majesty,
+		band_logo: majesty_logo,
+	},
+	{
+		band: regale,
+		band_logo: regale_logo,
+	},
+	{
+		band: orangetrip,
+		band_logo: orangetrip_logo,
+	},
+];
+export { contactPerson, latarText, artisList };
