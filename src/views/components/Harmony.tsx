@@ -1,7 +1,7 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 import styled from '@emotion/styled';
-import { contactPerson } from '../../constants';
+import { artisList, contactPerson } from '../../constants';
 import { Link } from 'react-router-dom';
 const FooterStyle = styled.div`
 	position: fixed;
@@ -23,7 +23,7 @@ const FooterStyle = styled.div`
 				background-color: #fffef4;
 			}
 			h1 {
-				font-size: 16px;
+				font-size: 26px;
 			}
 			div {
 				display: flex;
@@ -35,6 +35,7 @@ const FooterStyle = styled.div`
 		}
 	}
 `;
+
 const Harmony: React.FC = (): React.JSX.Element => {
 	return (
 		<FooterStyle>
@@ -50,7 +51,11 @@ const Harmony: React.FC = (): React.JSX.Element => {
 						<span />
 						<h1>harmony vol#2</h1>
 						<span />
-						<h1>naff</h1>
+						{artisList.map((list, index) => (
+							<React.Fragment key={index}>
+								<h1>{list.name}</h1>
+							</React.Fragment>
+						))}
 					</section>
 				))}
 			</Marquee>

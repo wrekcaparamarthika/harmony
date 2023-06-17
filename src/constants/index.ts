@@ -44,22 +44,27 @@ const latarText = {
 
 const artisList = [
 	{
+		name: 'naff',
 		band: naff,
 		band_logo: naff_logo,
 	},
 	{
+		name: 'harmonia',
 		band: harmonia,
 		band_logo: harmonia_logo,
 	},
 	{
+		name: 'majesty',
 		band: majesty,
 		band_logo: majesty_logo,
 	},
 	{
+		name: 'regale',
 		band: regale,
 		band_logo: regale_logo,
 	},
 	{
+		name: 'orange trip',
 		band: orangetrip,
 		band_logo: orangetrip_logo,
 	},
